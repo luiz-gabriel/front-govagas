@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2? family= Inter:wght@100;200;300;400;500;600;700;800;900 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 /*Reset*/
 *{
@@ -8,14 +8,17 @@
 }
 
 body{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-size: 1em;
     background-color: #F1F1F1;
 }
 
-a{
+a, :visited{
+    color: white;
     text-decoration: none;
 }
+/*Fim do reset*/
+
 /*Formatação do cabeçalho e seus dependentes*/
 #cabecalho{
     background-color: #3D22BC;
@@ -27,31 +30,24 @@ a{
 
 #logo{
     color: white;
-    font-size: 1.25em;
     padding: 10px;
 }
 
 #search{
     display: flex;
-    width: 90%;
-    max-width: 380px;
     flex-direction: column;
-    justify-content: center;
-}
-
-input:focus{
-    outline: none;
-}
-
-#search> input::placeholder{
-    text-indent: 10px;
+    width: 90%;
+    padding: 15px;
 }
 
 #search-vagas, #search-local{
     border: none;
     border-radius: 5px;
-    margin: 10px 0;
-    height: 30px;
+    padding: 10px;
+    width: 100%;
+    max-width: 320px;
+    margin: auto;
+    margin-bottom: 15px;
 }
 
 #get-vagas{
@@ -59,67 +55,59 @@ input:focus{
     color: white;
     border: none;
     border-radius: 5px;
-    margin: 10px auto;
-    width: 60%;
-    height: 30px;
+    padding: 10px;
+    width: 50%;
+    max-width: 180px;
+    margin: auto;
 }
+/*Fim da formatação do cabeçalho*/
+
 /*Formatação do main e seus dependentes*/
 #list-vagas{
     display: flex;
-    flex-wrap: wrap;
-    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .vaga{
-    margin: auto;
-    padding: 10px;
-    width: 310px;
-}
-
-.title-vaga{
-    font-weight: 600;
-    padding-top: 25px;
-}
-
-.inf-vaga{
-    font-size: 12px;
+    padding: 15px;
+    max-width: 380px;
 }
 
 .desc-vaga{
-    font-size: 14px;
-    font-weight: 400;
     text-align: justify;
 }
+/*Fim da formatação do main*/
 
-.get-inf-vaga{
-    border: none;
+/*Formatação do cabeçalho e seus dependentes*/
+#rodape{
     background-color: #3D22BC;
     color: white;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 16px;
-    width: 200px;
-    height: 35px;
-}
-
-#pag-vagas{
+    border: 1px solid red;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-#pag-vagas ul{
-    display: flex;
-    list-style: none;
+#inf-rodape{
     padding: 15px;
+    max-width: 380px;
 }
 
-#pag-vagas ul>li{
-    padding: 5px 10px;
+#inf-rodape> a{
+    display: block;
+    margin-top: 5px;
 }
 
-#pag-vagas li> a, :visited{
-    background-color: #3D22BC;
-    border-radius: 10px;
-    padding: 3px 6px;
-    color: white;
+#inf-rodape2{
+    text-align: justify;
+    padding: 15px;
+    max-width: 380px;
+    font-weight: 500;
+}
+
+#inf-rodape3{
+    max-width: 380px;
+    padding: 15px;
 }

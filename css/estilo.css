@@ -46,7 +46,7 @@ a, :visited{
     border-radius: 5px;
     padding: 10px;
     width: 100%;
-    max-width: 320px;
+    max-width: 360px;
     margin: auto;
     margin-bottom: 15px;
 }
@@ -65,6 +65,7 @@ a, :visited{
     border-radius: 5px;
     font-size: 14px;
     font-weight: 500;
+    cursor: pointer;
     padding: 10px;
     width: 50%;
     max-width: 180px;
@@ -95,6 +96,7 @@ a, :visited{
     color: #000000;
     font-size: 12px;
     font-weight: 400;
+    padding: 5px 0;
 }
 
 .desc-vaga{
@@ -102,6 +104,7 @@ a, :visited{
     text-align: justify;
     font-size: 14px;
     font-weight: 400;
+    padding-bottom: 10px;
 }
 
 .get-inf-vaga{
@@ -111,6 +114,7 @@ a, :visited{
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
     width: 200px;
     padding: 12px;
 
@@ -148,4 +152,55 @@ a, :visited{
     max-width: 380px;
     padding: 15px;
     font-weight: 500;
+}
+
+/*Formtação para tablet e telas hd*/
+@media (min-width:650px){
+    /*Formtação do cabeçalho e seus dependentes*/
+    #cabecalho{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #search{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #search-vagas, #search-local{
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    #get-vagas{
+        margin: 0;
+        margin-right: 10px;
+    }
+    /*Fim da formatação do cabeçalho*/
+
+    /*Formatação do main e seus dependentes*/
+    #list-vagas{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /*Formatação do rodapé e seus dependentes*/
+    #rodape{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    /*Fim da formatação do rodapé*/
+}
+/*Fim da formtação*/
+
+/*Formatação para telas full hd+*/
+@media (min-width:1900px){
+    #list-vagas{
+        justify-content: flex-start;
+    }
 }

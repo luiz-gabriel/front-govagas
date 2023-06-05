@@ -84,7 +84,6 @@ a, :visited{
 #rodape{
     background-color: #3D22BC;
     color: white;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,14 +96,14 @@ a, :visited{
 
 #inf-rodape> a{
     display: block;
-    margin-top: 5px;
+    padding-top: 5px;
 }
 
 #inf-rodape2{
     text-align: justify;
     padding: 15px;
     max-width: 380px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #inf-rodape3{

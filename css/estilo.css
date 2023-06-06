@@ -12,6 +12,8 @@ body{
     font-size: 1em;
     font-weight: 100;
     background-color: #F1F1F1;
+    margin: auto;
+    max-width: 1920px;
 }
 
 a, :visited{
@@ -72,6 +74,28 @@ a, :visited{
     margin: auto;
 }
 /*Fim da formatação do cabeçalho*/
+
+/*Formatação da capa*/
+#photo-cape{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: linear-gradient(0deg, rgba(61,34, 188, 0.87), rgba(61, 34, 188, 0.87)), url(../content/capa.jpeg);
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+
+#photo-cape p{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 51px;
+    text-transform: uppercase;
+    max-width: 817px;
+}
+/*Fim da formatação da capa*/
 
 /*Formatação do main e seus dependentes*/
 #list-vagas{
@@ -181,6 +205,12 @@ a, :visited{
         margin-right: 10px;
     }
     /*Fim da formatação do cabeçalho*/
+
+    /*Formatação da capa*/
+    #photo-cape{
+        display: flex;
+    }
+    /*Fim da formatação da capa*/
 
     /*Formatação do main e seus dependentes*/
     #list-vagas{

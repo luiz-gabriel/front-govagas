@@ -145,6 +145,32 @@ a, :visited{
 }
 /*Fim da formatação do main*/
 
+/*Paginação*/
+#pag{
+    font-size: 1.1em;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+#pag ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#pag li{
+    border-radius: 4px;
+    background-color: #3D22BC;
+    padding: 4px 14px;
+    margin: auto 4px;
+}
+
+#pag img{
+    width: 14px;
+}
 /*Formatação do cabeçalho e seus dependentes*/
 #rodape{
     background-color: #3D22BC;

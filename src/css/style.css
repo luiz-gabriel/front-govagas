@@ -1,0 +1,43 @@
+/* Cabeçalho */
+header {
+    background: #3D22BC;
+}
+
+#btn-search {
+    background: #16B967;
+}
+
+#search-vagas, #search-local,
+#search-vagas:focus, #search-local:focus {
+    text-indent: 10px;
+    outline: none;
+}
+/* Conteúdo principal */
+#capa {
+    background: linear-gradient(0deg, rgba(61, 34, 188, 0.87) 0%, rgba(61, 34, 188, 0.87) 100%), url(../content/capa.jpeg), lightgray 50% / cover no-repeat;
+    height: 300px;
+    max-width: 1920px;
+    border-radius: 0 0 20px 20px;
+}
+
+#text-capa {
+    color: #FFF;
+    width: 817px;
+    height: 153px;
+}
+
+#info-vagas {
+    background: #3D22BC;
+}
+
+#desc-vaga  {
+    text-align: justify;
+}
+/* Rodapé */
+footer {
+    background-color: #3D22BC;
+}
+
+#desc-site {
+    text-align: justify;
+}

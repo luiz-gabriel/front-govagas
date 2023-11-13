@@ -18,7 +18,7 @@ export class CardVagaComponent implements OnInit {
   ngOnInit(): void {
     this.cardsService.getCards().subscribe(
       (res) => {
-        // Temporizador pra debug de visualização
+        // Temporizador pra debug de visualização, não presente na versão de produção
         setTimeout(() => {
           this.conf = false;
           this.confirm.emit(this.conf);

@@ -8,14 +8,16 @@ header {
 h1 {
   font-weight: 500;
   color: $secondary-text-color;
+  cursor: pointer;
 
-  @media (min-width: 1024px ) {
+  @media (min-width: 1024px) {
     font-size: 26px;
     line-height: 2;
   }
 }
 
 input {
+  // Input do tipo text
   &[type="text"] {
     border-radius: 8px;
     color: $primary-text-color;
@@ -30,7 +32,7 @@ input {
       padding: 12px 0 12px 12px;
     }
   }
-
+  // Input do tipo submit
   &[type="submit"] {
     background-color: $primary-button-color;
     color: $secondary-text-color;
@@ -39,7 +41,7 @@ input {
     padding: 14px;
 
     @media (min-width: 1024px) {
-      padding: 12px
+      padding: 12px;
     }
   }
 }

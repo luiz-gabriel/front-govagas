@@ -13,7 +13,7 @@ import { CardVagaComponent } from 'src/app/components/card-vaga/card-vaga.compon
     CardVagaComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
     HomeComponent,

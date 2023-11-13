@@ -13,8 +13,11 @@ h1 {
 
 input {
   &[type="text"] {
+    border-radius: 5px;
     color: $primary-text-color;
-    padding: 15px 0 15px 15px;
+    padding: 16px 0 16px 16px;
+    outline: none;
+
     &::placeholder {
       color: $primary-text-color;
     }
@@ -29,5 +32,8 @@ input {
 }
 
 select {
-  padding: 15px 0 15px 15px;
+  border-radius: 5px;
+  padding: 16px 0 16px 16px;
+  outline: none;
+  appearance: none;
 }

@@ -1,0 +1,33 @@
+@import "../../../scss/variaveis.scss";
+
+// Formatações
+header {
+  background-color: $primary-color;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 500;
+  color: $secondary-text-color;
+}
+
+input {
+  &[type="text"] {
+    color: $primary-text-color;
+    padding: 15px 0 15px 15px;
+    &::placeholder {
+      color: $primary-text-color;
+    }
+  }
+
+  &[type="submit"] {
+    background-color: $primary-button-color;
+    color: $secondary-text-color;
+    font-weight: 500;
+    padding: 14px 30px;
+  }
+}
+
+select {
+  padding: 15px 0 15px 15px;
+}

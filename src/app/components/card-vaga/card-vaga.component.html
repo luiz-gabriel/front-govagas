@@ -1,5 +1,5 @@
 <div
-  class="col-12 col-md-6 col-lg-4 col-xl-3 card border-0 mb-5"
+  class="col-12 col-md-6 col-lg-4 col-xl-3 card border-0 mb-4"
   [id]="card.id"
   *ngFor="let card of cards"
 >
@@ -18,7 +18,7 @@
       {{ card.local == "" || null ? "Local" : card.local }} -
       {{ card.type == "" || null ? "Tipo" : card.type }}
     </p>
-    <p class="card-text">
+    <p class="card-text overflow-auto">
       {{ card.desc == "" || null ? "Descrição da vaga" : card.desc }}
     </p>
     <a [href]="card.link == '' || null ? '#' : card.link" class="btn fw-bold"

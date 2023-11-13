@@ -4,20 +4,23 @@ import { CommonModule } from '@angular/common';
 // Componentes
 import { HomeComponent } from 'src/app/pages/home/home.component';
 import { CardVagaComponent } from 'src/app/components/card-vaga/card-vaga.component';
+import { CardSpinnerComponent } from 'src/app/components/card-spinner/card-spinner.component';
 
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    CardVagaComponent
+    CardVagaComponent,
+    CardSpinnerComponent
   ],
   imports: [
     CommonModule,
   ],
   exports: [
     HomeComponent,
-    CardVagaComponent
+    CardVagaComponent,
+    CardSpinnerComponent
   ]
 })
 export class HomeModule { }

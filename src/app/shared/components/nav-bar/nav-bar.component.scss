@@ -6,14 +6,18 @@ header {
 }
 
 h1 {
-  text-align: center;
   font-weight: 500;
   color: $secondary-text-color;
+
+  @media (min-width: 1024px ) {
+    font-size: 26px;
+    line-height: 2;
+  }
 }
 
 input {
   &[type="text"] {
-    border-radius: 5px;
+    border-radius: 8px;
     color: $primary-text-color;
     padding: 16px 0 16px 16px;
     outline: none;
@@ -21,19 +25,32 @@ input {
     &::placeholder {
       color: $primary-text-color;
     }
+
+    @media (min-width: 1024px) {
+      padding: 12px 0 12px 12px;
+    }
   }
 
   &[type="submit"] {
     background-color: $primary-button-color;
     color: $secondary-text-color;
+    font-size: 16px;
     font-weight: 500;
-    padding: 14px 30px;
+    padding: 14px;
+
+    @media (min-width: 1024px) {
+      padding: 12px
+    }
   }
 }
 
 select {
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 16px 0 16px 16px;
   outline: none;
   appearance: none;
+
+  @media (min-width: 1024px) {
+    padding: 12px 0 12px 12px;
+  }
 }

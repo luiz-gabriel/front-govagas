@@ -14,9 +14,6 @@ export class CardService {
   }
 
   public getCards(): Observable<Array<Card>> {
-    return this.http.get<Array<Card>>(`${this.url}vagas`).pipe(
-      (res) => res,
-      (erro) => erro
-    );
+    return this.http.get<Array<Card>>(`${this.url}vagas`)
   }
 }
